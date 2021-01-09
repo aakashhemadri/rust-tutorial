@@ -1,5 +1,7 @@
 fn main() {
-    // Variables &  Mutability
+    // Variables, Mutability & Shadowing
+    println!("Variables, Mutability & Shadowing:");
+
     // let mut x = 5;
     // println!("The value of x is: {}", x);
     // x = 6;
