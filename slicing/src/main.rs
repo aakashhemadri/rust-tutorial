@@ -1,6 +1,6 @@
 fn main() {
     println!("Hello, world!");
-    let mut s = String::from("Hello World");
+    let s = String::from("Hello World");
 
     let slice = first_word(&s);
 
