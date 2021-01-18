@@ -18,6 +18,7 @@
 //     address: String::from("::1"),
 // };
 
+#[allow(dead_code)]
 enum Message {
     Quit,
     Move { x: i32, y: i32 },
