@@ -19,6 +19,11 @@ fn main() {
             Err(_) => continue,
         };
 
+        if guess < 1 || guess > 100 {
+            println!("The secret number will be between 1 and 100");
+            continue;
+        }
+
         println!("You guessed: {}", guess);
 
         match guess.cmp(&secret_number) {
@@ -29,5 +34,22 @@ fn main() {
                 break;
             }
         }
+    }
+}
+
+pub struct Guess {
+    value: u8,
+}
+
+impl Guess {
+    pub fn new(value: u8) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}.", value);
+        }
+        Guess { value }
+    }
+
+    pub fn value(&self) -> u8 {
+        self.value
     }
 }
