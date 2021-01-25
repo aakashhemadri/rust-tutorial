@@ -1,3 +1,4 @@
+#[allow(unused)]
 fn main() {
     let string1 = String::from("abcd");
     let string2 = "xyz";
@@ -46,6 +47,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 //     result.as_str()
 // }
 
+#[allow(unused)]
 struct ImportantExcerpt<'a> {
     part: &'a str,
 }
